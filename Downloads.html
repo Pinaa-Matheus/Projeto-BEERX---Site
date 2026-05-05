@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Início</a>
+  <a href="sobre.html">Sobre o Projeto</a>
+  <a href="downloads.html">Downloads</a>
+</nav>
+
+<div class="page ativa">
+  <h1>Downloads</h1>
+
+  <div class="download-item">
+    <h3>Relatório Final</h3>
+    <p>PDF · 2,4 MB · Janeiro de 2025</p>
+    <button onclick="verDetalhes(this)">Mais informações</button>
+    <button>Download</button>
+    <div class="download-detalhe">
+      Relatório completo do projeto com introdução, desenvolvimento, resultados e conclusão.
+    </div>
+  </div>
+
+  <div class="download-item">
+    <h3>Apresentação de Slides</h3>
+    <p>PPTX · 8 MB · Janeiro de 2025</p>
+    <button onclick="verDetalhes(this)">Mais informações</button>
+    <button>Download</button>
+    <div class="download-detalhe">
+      Slides usados na apresentação final do projeto para a banca.
+    </div>
+  </div>
+
+  <div class="download-item">
+    <h3>Código-fonte</h3>
+    <p>ZIP · 500 KB · Janeiro de 2025</p>
+    <button onclick="verDetalhes(this)">Mais informações</button>
+    <button>Download</button>
+    <div class="download-detalhe">
+      Arquivo com todo o código-fonte desenvolvido. Inclui README com instruções.
+    </div>
+  </div>
+</div>
+
+<footer>
+  Projeto Acadêmico — Faculdade · 2025
+</footer>
+
+<script>
+  function verDetalhes(btn) {
+    const detalhe = btn.parentElement.querySelector('.download-detalhe');
+    if (detalhe.style.display === 'block') {
+      detalhe.style.display = 'none';
+      btn.textContent = 'Mais informações';
+    } else {
+      detalhe.style.display = 'block';
+      btn.textContent = 'Fechar';
+    }
+  }
+</script>
+
+</body>
+</html>
