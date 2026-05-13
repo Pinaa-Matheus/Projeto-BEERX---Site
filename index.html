@@ -3,54 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
-  <title>Projeto da Faculdade</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Projeto Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#f8f6f1]">
 
-<nav>
-  <a href="index.html">Início</a>
-  <a href="sobre.html">Sobre o Projeto</a>
-  <a href="downloads.html">Downloads</a>
-</nav>
+  <body class="bg-[#f7f1e5] text-[#2d1608]">
 
-<div class="page ativa" id="inicio">
-  <h1>Nome do Projeto</h1>
-  <p>Breve descrição do projeto. Escreva aqui uma ou duas frases apresentando o trabalho.</p>
+  <header class="fixed top-0 w-full z-50 bg-[#2d1608]/95 backdrop-blur-md border-b border-[#ff7b1d]/30">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
 
-  <h2>Fotos</h2>
-  <div class="fotos">
-    <div class="foto-box">Foto 1</div>
-    <div class="foto-box">Foto 2</div>
-    <div class="foto-box">Foto 3</div>
-    <div class="foto-box">Foto 4</div>
-  </div>
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-[#b8ff2a] rounded-lg rotate-12"></div>
+        <h1 class="title-font text-4xl text-[#ff8f1f] tracking-wide">
+          Beer<span class="text-[#b8ff2a]">X</span>
+        </h1>
+      </div>
 
-  <h2>Participantes</h2>
-  <div class="participantes">
-    <div class="participante">
-      <strong>Nome Sobrenome</strong>
-      <p>Função</p>
-      <p>RA: 000000</p>
+      <nav>
+        <ul class="flex gap-8 text-white font-medium">
+          <li><a href="#" class="hover:text-[#b8ff2a] transition">Início</a></li>
+          <li><a href="#" class="hover:text-[#b8ff2a] transition">Sobre</a></li>
+          <li><a href="#" class="hover:text-[#b8ff2a] transition">Equipe</a></li>
+          <li><a href="#" class="hover:text-[#b8ff2a] transition">Downloads</a></li>
+          <li><a href="#" class="hover:text-[#b8ff2a] transition">----</a></li>
+        </ul>
+      </nav>
+
     </div>
-    <div class="participante">
-      <strong>Nome Sobrenome</strong>
-      <p>Função</p>
-      <p>RA: 000000</p>
-    </div>
-    <div class="participante">
-      <strong>Nome Sobrenome</strong>
-      <p>Função</p>
-      <p>RA: 000000</p>
-    </div>
-  </div>
-</div>
+  </header>
 
-<footer>
-  Projeto Acadêmico — Faculdade · 2025
-</footer>
+  <section class="min-h-screen pt-24 bg-cover bg-center relative" style="background-image: url('https://www.sp.senac.br/documents/297735/297737/cas_externa4-2800px.jpg/db76ca6d-e211-5ca4-ea14-8b78f953ac5f?version=1.0&t=1618496073533&imagePreview=1');">
+    
+    <div class="absolute inset-0 bg-white/50"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <div class="relative max-w-7xl mx-auto px-8 min-h-screen flex items-center">
+      <div class="max-w-xl">
+        <h2 class="text-6xl font-serif text-gray-900 leading-tight mb-6">
+          Projeto Cerveja <br>
+          ------------
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-relaxed mb-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Nemo distinctio architecto natus, recusandae quisquam
+          doloremque repellendus.
+        </p>
+
+        <a href="#" class="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-2xl hover:bg-gray-800 transition">
+          --------
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
