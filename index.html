@@ -3,60 +3,299 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Home</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>BeerX — Projeto Cerveja</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#f8f6f1]">
-
-  <body class="bg-[#f7f1e5] text-[#2d1608]">
-
-  <header class="fixed top-0 w-full z-50 bg-[#2d1608]/95 backdrop-blur-md border-b border-[#ff7b1d]/30">
-    <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
-
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-[#b8ff2a] rounded-lg rotate-12"></div>
-        <h1 class="title-font text-4xl text-[#ff8f1f] tracking-wide">
-          Beer<span class="text-[#b8ff2a]">X</span>
-        </h1>
+<body>
+ 
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-square"></div>
+        <h1>Beer<span>X</span></h1>
       </div>
-
       <nav>
-        <ul class="flex gap-8 text-white font-medium">
-          <li><a href="#" class="hover:text-[#b8ff2a] transition">Início</a></li>
-          <li><a href="#" class="hover:text-[#b8ff2a] transition">Sobre</a></li>
-          <li><a href="#" class="hover:text-[#b8ff2a] transition">Equipe</a></li>
-          <li><a href="#" class="hover:text-[#b8ff2a] transition">Downloads</a></li>
-          <li><a href="#" class="hover:text-[#b8ff2a] transition">----</a></li>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#integrantes">Equipe</a></li>
+          <li><a href="#galeria">Galeria</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
-
-  <section class="min-h-screen pt-24 bg-cover bg-center relative" style="background-image: url('https://www.sp.senac.br/documents/297735/297737/cas_externa4-2800px.jpg/db76ca6d-e211-5ca4-ea14-8b78f953ac5f?version=1.0&t=1618496073533&imagePreview=1');">
-    
-    <div class="absolute inset-0 bg-white/50"></div>
-
-    <div class="relative max-w-7xl mx-auto px-8 min-h-screen flex items-center">
-      <div class="max-w-xl">
-        <h2 class="text-6xl font-serif text-gray-900 leading-tight mb-6">
-          Projeto Cerveja <br>
-          ------------
+ 
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">🎓 Projeto Universitário</div>
+        <h2>
+          Feita com <span>ciência</span>,<br>
+          servida com paixão.
         </h2>
-
-        <p class="text-gray-600 text-lg leading-relaxed mb-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Nemo distinctio architecto natus, recusandae quisquam
-          doloremque repellendus.
+        <p>
+          Um projeto acadêmico que nasceu nos laboratórios e foi afinar no copo.
+          Da receita à fermentação, cada etapa com rigor e muito amor pelo ofício.
         </p>
-
-        <a href="#" class="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-2xl hover:bg-gray-800 transition">
-          --------
-          <span>→</span>
+        <a href="#sobre" class="btn-primary">
+          Conheça o projeto <span>→</span>
         </a>
       </div>
     </div>
   </section>
+ 
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="section-inner">
+      <div class="section-label">Quem somos</div>
+      <h2 class="section-title">Sobre o <span>Projeto</span></h2>
+ 
+      <div class="sobre-grid">
+        <div class="sobre-card">
+          <div class="sobre-icon">🔬</div>
+          <h3>Origem Acadêmica</h3>
+          <p>
+            Nascemos de uma disciplina de [nome da matéria] no curso de [seu curso].
+            O desafio era simples: criar uma cerveja do zero, com embasamento científico e técnico.
+          </p>
+        </div>
+        <div class="sobre-card">
+          <div class="sobre-icon">🌾</div>
+          <h3>Nossa Missão</h3>
+          <p>
+            Unir teoria e prática no desenvolvimento de uma cerveja artesanal com identidade própria,
+            explorando fermentação, lupulagem e maltes com critério científico.
+          </p>
+        </div>
+        <div class="sobre-card">
+          <div class="sobre-icon">🏆</div>
+          <h3>Nossa Visão</h3>
+          <p>
+            Mostrar que inovação e rigor acadêmico podem resultar em algo que as pessoas
+            realmente queiram beber — e celebrar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- INTEGRANTES -->
+  <section id="integrantes">
+    <div class="section-inner">
+      <div class="section-label">Quem fez acontecer</div>
+      <h2 class="section-title">A <span>Equipe</span></h2>
+ 
+      <div class="integrantes-grid">
+ 
+        <div class="membro-card">
+          <div class="membro-foto">
+            <!-- Substitua por: <img src="foto.jpg" alt="Nome"> -->
+            <div class="membro-iniciais">AB</div>
+          </div>
+          <div class="membro-info">
+            <p class="membro-nome">Nome Sobrenome</p>
+            <p class="membro-role">Função no Projeto</p>
+            <p class="membro-bio">Breve descrição</p>
+          </div>
+        </div>
 
+        <div class="membro-card">
+          <div class="membro-foto">
+            <div class="membro-iniciais">CD</div>
+          </div>
+          <div class="membro-info">
+            <p class="membro-nome">Nome Sobrenome</p>
+            <p class="membro-role">Função no Projeto</p>
+            <p class="membro-bio">Breve descrição</p>
+          </div>
+        </div>
+ 
+        <div class="membro-card">
+          <div class="membro-foto">
+            <div class="membro-iniciais">EF</div>
+          </div>
+          <div class="membro-info">
+            <p class="membro-nome">Nome Sobrenome</p>
+            <p class="membro-role">Função no Projeto</p>
+            <p class="membro-bio">Breve descrição</p>
+          </div>
+        </div>
+ 
+        <div class="membro-card">
+          <div class="membro-foto">
+            <div class="membro-iniciais">GH</div>
+          </div>
+          <div class="membro-info">
+            <p class="membro-nome">Nome Sobrenome</p>
+            <p class="membro-role">Função no Projeto</p>
+            <p class="membro-bio">Breve descrição</p>
+          </div>
+        </div>
+ 
+        <div class="membro-card">
+          <div class="membro-foto">
+            <div class="membro-iniciais">IJ</div>
+          </div>
+          <div class="membro-info">
+            <p class="membro-nome">Nome Sobrenome</p>
+            <p class="membro-role">Função no Projeto</p>
+            <p class="membro-bio">Breve descrição</p>
+          </div>
+        </div>
+ 
+        <div class="membro-card">
+          <div class="membro-foto">
+            <div class="membro-iniciais">KL</div>
+          </div>
+          <div class="membro-info">
+            <p class="membro-nome">Nome Sobrenome</p>
+            <p class="membro-role">Função no Projeto</p>
+            <p class="membro-bio">Breve descrição</p>
+          </div>
+        </div>
+ 
+        <div class="membro-card">
+          <div class="membro-foto">
+            <div class="membro-iniciais">MN</div>
+          </div>
+          <div class="membro-info">
+            <p class="membro-nome">Nome Sobrenome</p>
+            <p class="membro-role">Função no Projeto</p>
+            <p class="membro-bio">Breve descrição</p>
+          </div>
+        </div>
+ 
+        <div class="membro-card">
+          <div class="membro-foto">
+            <div class="membro-iniciais">OP</div>
+          </div>
+          <div class="membro-info">
+            <p class="membro-nome">Nome Sobrenome</p>
+            <p class="membro-role">Função no Projeto</p>
+            <p class="membro-bio">Breve descrição</p>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!--CARROSSEL-->
+  <section id="galeria">
+    <div class="section-inner">
+      <div class="section-label">Nos bastidores</div>
+      <h2 class="section-title">A <span>Galeria</span></h2>
+ 
+      <div class="carrossel-wrapper">
+        <div class="carrossel-track" id="carrosselTrack">
+ 
+          <!-- Slide 1 — Substitua o div.slide-placeholder por <img src="foto.jpg" alt="..."> -->
+          <div class="carrossel-slide">
+            <div class="slide-placeholder">
+              <div class="slide-placeholder-icon">📸</div>
+              <span>Foto principal do processo</span>
+            </div>
+          </div>
+ 
+          <!-- Slide 2 -->
+          <div class="carrossel-slide">
+            <div class="slide-placeholder">
+              <div class="slide-placeholder-icon">🌾</div>
+              <span>Maltes e ingredientes</span>
+            </div>
+          </div>
+ 
+          <!-- Slide 3 -->
+          <div class="carrossel-slide">
+            <div class="slide-placeholder">
+              <div class="slide-placeholder-icon">🔥</div>
+              <span>Processo de brassagem</span>
+            </div>
+          </div>
+ 
+          <!-- Slide 4 -->
+          <div class="carrossel-slide">
+            <div class="slide-placeholder">
+              <div class="slide-placeholder-icon">🧪</div>
+              <span>Fermentação no laboratório</span>
+            </div>
+          </div>
+ 
+          <!-- Slide 5 -->
+          <div class="carrossel-slide">
+            <div class="slide-placeholder">
+              <div class="slide-placeholder-icon">🍺</div>
+              <span>Produto final</span>
+            </div>
+          </div>
+ 
+          <!-- Slide 6 -->
+          <div class="carrossel-slide">
+            <div class="slide-placeholder">
+              <div class="slide-placeholder-icon">🎉</div>
+              <span>Equipe comemorando</span>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+ 
+      <!-- Navegação do carrossel -->
+      <div class="carrossel-nav">
+        <button class="carrossel-btn" id="btnAnterior" aria-label="Anterior">←</button>
+        <div class="carrossel-dots" id="carrosselDots"></div>
+        <button class="carrossel-btn" id="btnProximo" aria-label="Próximo">→</button>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-square" style="width:32px;height:32px"></div>
+            <h1 style="font-size:1.5rem;margin:0">Beer<span>X</span></h1>
+          </div>
+          <p>
+            Um projeto acadêmico do curso de [Curso] da [Nome da Universidade].
+            Feito com rigor científico, paixão e muita cerveja pelo caminho.
+          </p>
+        </div>
+ 
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#sobre">Sobre o Projeto</a></li>
+            <li><a href="#integrantes">Equipe</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+          </ul>
+        </div>
+ 
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:beerx@email.com">beerx@email.com</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">[Universidade]</a></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="footer-bottom">
+        <p>© 2025 BeerX — Projeto Acadêmico. Feito com <span>❤</span> e lúpulo.</p>
+        <span class="footer-tag">🎓 Projeto Universitário</span>
+      </div>
+    </div>
+  </footer>
+ 
+<script src="src/js/carrossel.js"></script>
 </body>
 </html>
