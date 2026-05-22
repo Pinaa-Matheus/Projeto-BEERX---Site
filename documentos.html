@@ -6,7 +6,6 @@
   <title>BeerX — Downloads</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* ── PÁGINA DE DOWNLOADS ── */
 
     .downloads-page {
       min-height: 100vh;
@@ -35,7 +34,7 @@
 
     .download-card {
       display: grid;
-      grid-template-columns: 200px 1fr;
+      grid-template-columns: 260px 1fr;
       background: rgba(247, 241, 229, 0.04);
       border: 1px solid rgba(255, 143, 31, 0.2);
       border-radius: 20px;
@@ -51,21 +50,21 @@
 
     /* Coluna da imagem */
     .download-thumb {
-      width: 200px;
-      min-height: 180px;
-      background: rgba(45, 22, 8, 0.7);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      overflow: hidden;
-      position: relative;
+    width: 260px;
+    min-height: 180px;
+    background: rgba(45, 22, 8, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
     }
-
     .download-thumb img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       display: block;
     }
 
@@ -327,6 +326,40 @@
       </div>
       <!-- [FIM] CARD DE DOWNLOAD -->
 
+      <!-- [INÍCIO] CARD DE DOWNLOAD — Copie daqui até [FIM] para adicionar um novo item -->
+      <div class="download-card">
+
+        <div class="download-thumb">
+          <img src="img/Fotos Documentos/Redes de suprimentos.png" alt="Descrição">
+        </div>
+        <div class="download-body">
+          <div>
+            <div class="download-top">
+              <div>
+                <p class="download-categoria">Apresentação</p>
+                <h3 class="download-titulo">Redes de Suprimentos</h3>
+              </div>
+              <span class="download-badge">PDF · 21 MB</span>
+            </div>
+            <p class="download-descricao">
+              Este projeto apresenta a estrutura da rede de suprimentos da Beer X, mapeando fornecedores, clientes, processos logísticos e fluxos de distribuição. O objetivo é analisar como a integração entre produção, transporte e tecnologia contribui para a eficiência da cadeia de suprimentos.
+            </p>
+          </div>
+          <div class="download-acoes">
+            <a href="docs/Redes-de-Suprimentos-BeerX.pdf" class="btn-download btn-download-primary">
+              ↓ Baixar PDF
+            </a>
+            <a href="https://canva.link/7v3f4266tjvdi2x" class="btn-download btn-download-secondary">
+              ↗ Visualizar online
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <!-- [FIM] CARD DE DOWNLOAD -->
+
+      
+
       <!-- ══ CATEGORIA: RECEITA ══ -->
       <div class="downloads-categoria-titulo">Receita</div>
 
@@ -347,16 +380,16 @@
                 <p class="download-categoria">Ficha Técnica</p>
                 <h3 class="download-titulo">Receita e Ficha de Produção</h3>
               </div>
-              <span class="download-badge">XLSX · 340 KB</span>
+              <span class="download-badge">PDF · 105 KB</span>
             </div>
             <p class="download-descricao">
-              Planilha com a receita detalhada: ingredientes, quantidades, temperaturas de mostura,
-              tempo de fervura e cronograma de adição de lúpulo. Pronto para escalar em outros volumes.
+              PDF com a receita detalhada: ingredientes, quantidades, temperaturas de mostura,
+              tempo de fervura e cronograma de adição de lúpulo.
             </p>
           </div>
           <div class="download-acoes">
-            <a href="#" class="btn-download btn-download-primary">
-              ↓ Baixar Planilha
+            <a href="docs/receita-cerveja.pdf" class="btn-download btn-download-primary">
+              ↓ Baixar PDF
             </a>
           </div>
         </div>
