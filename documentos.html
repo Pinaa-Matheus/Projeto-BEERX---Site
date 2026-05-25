@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BeerX — Downloads</title>
+  <title>BeerX — Downloads e Links</title>
   <link rel="stylesheet" href="style.css">
   <style>
-
     .downloads-page {
       min-height: 100vh;
       padding: 140px 32px 100px;
@@ -23,15 +22,8 @@
     }
 
     /* ══════════════════════════════════════════
-       CARD DE DOWNLOAD
-       Para adicionar um novo item, copie o bloco
-       inteiro entre os comentários:
-       <!-- [INÍCIO] CARD DE DOWNLOAD -->
-       e
-       <!-- [FIM] CARD DE DOWNLOAD -->
-       e cole logo abaixo do último card.
+       CARD DE DOWNLOAD / LINK
     ══════════════════════════════════════════ */
-
     .download-card {
       display: grid;
       grid-template-columns: 260px 1fr;
@@ -50,45 +42,23 @@
 
     /* Coluna da imagem */
     .download-thumb {
-    width: 260px;
-    min-height: 180px;
-    background: rgba(45, 22, 8, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    overflow: hidden;
-    position: relative;
-    padding: 10px;
+      width: 260px;
+      min-height: 180px;
+      background: rgba(45, 22, 8, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      overflow: hidden;
+      position: relative;
     }
+    
+    /* Tag de imagem pronta para uso */
     .download-thumb img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: contain; /* alterado para cover para preencher bonito */
       display: block;
-    }
-
-    /* Placeholder quando não há imagem */
-    .download-thumb-placeholder {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      width: 100%;
-      height: 100%;
-      color: rgba(247, 241, 229, 0.25);
-    }
-
-    .download-thumb-placeholder span {
-      font-size: 2.8rem;
-    }
-
-    .download-thumb-placeholder p {
-      font-size: 0.72rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin: 0;
     }
 
     /* Coluna do conteúdo */
@@ -212,7 +182,6 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <div class="header-inner">
       <div class="logo">
@@ -223,114 +192,203 @@
       </div>
       <nav>
         <ul>
-          <li><a href="index.html#hero">Início</a></li>
+          <li><a href="index.html">Início</a></li>
           <li><a href="index.html#sobre">Sobre</a></li>
           <li><a href="index.html#integrantes">Equipe</a></li>
           <li><a href="index.html#galeria">Galeria</a></li>
-          <li><a href="downloads.html" style="color: var(--verde)">Downloads</a></li>
+          <li><a href="documentos.html">Documentos</a></li>
+          <li><a href="historia.html">História</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- CONTEÚDO -->
   <main class="downloads-page">
     <div class="downloads-inner">
 
-      <!-- Cabeçalho -->
       <div class="downloads-header">
-        <div class="section-label">Materiais do projeto</div>
+        <div class="section-label">Materiais e Links do projeto</div>
         <h2 class="section-title" style="margin-bottom: 0;">
-          <span>Downloads</span>
+          <span>Recursos BeerX</span>
         </h2>
       </div>
 
-      <!-- ══ CATEGORIA: DOCUMENTAÇÃO ══ -->
-      <div class="downloads-categoria-titulo">Documentação</div>
+      <div class="downloads-categoria-titulo">Documentação e Gestão</div>
 
-      <!-- [INÍCIO] CARD DE DOWNLOAD — Copie daqui até [FIM] para adicionar um novo item -->
       <div class="download-card">
-
         <div class="download-thumb">
-          <!--
-            Para usar imagem real, substitua o div abaixo por:
-            <img src="sua-imagem.jpg" alt="Descrição">
-          -->
-          <div class="download-thumb-placeholder">
-            <span>📄</span>
-            <p>PDF</p>
-          </div>
+          <img src="img/Fotos Documentos/Termo de abertura de projeto - TAP.png" alt="Capa TAP">
         </div>
-
         <div class="download-body">
           <div>
             <div class="download-top">
               <div>
-                <p class="download-categoria">Relatório</p>
-                <h3 class="download-titulo">Relatório Final do Projeto</h3>
+                <p class="download-categoria">Gestão de Projetos</p>
+                <h3 class="download-titulo">Termo de Abertura de Projeto (TAP)</h3>
               </div>
-              <span class="download-badge">PDF · 2,4 MB</span>
+              <span class="download-badge">PDF</span>
             </div>
             <p class="download-descricao">
-              Documento completo com todas as etapas do projeto: do briefing inicial à receita final,
-              incluindo análises laboratoriais, resultados de degustação e conclusões da equipe.
+              Documento oficial detalhando a justificativa do projeto acadêmico, o escopo, orçamento base e cronograma inicial das etapas da equipe BeerX.
             </p>
           </div>
           <div class="download-acoes">
-            <a href="#" class="btn-download btn-download-primary">
+            <button onclick="baixarArquivo('docs/TAP.pdf', 'TAP_BeerX.pdf')" class="btn-download btn-download-primary">
               ↓ Baixar PDF
-            </a>
-            <a href="#" class="btn-download btn-download-secondary">
+            </button>
+            <a href="docs/TAP.pdf" target="_blank" class="btn-download btn-download-secondary">
               ↗ Visualizar online
             </a>
           </div>
         </div>
-
       </div>
-      <!-- [FIM] CARD DE DOWNLOAD -->
 
-      <!-- [INÍCIO] CARD DE DOWNLOAD -->
       <div class="download-card">
-
         <div class="download-thumb">
-          <div class="download-thumb-placeholder">
-            <span>📊</span>
-            <p>PPTX</p>
-          </div>
+          <img src="img/Fotos Documentos/ATA de Reuniao.png" alt="Capa Ata">
         </div>
-
         <div class="download-body">
           <div>
             <div class="download-top">
               <div>
-                <p class="download-categoria">Apresentação</p>
-                <h3 class="download-titulo">Apresentação de Defesa</h3>
+                <p class="download-categoria">Registro de Reunião</p>
+                <h3 class="download-titulo">Ata de Reunião - Alinhamento</h3>
               </div>
-              <span class="download-badge">PPTX · 8,1 MB</span>
+              <span class="download-badge">PDF</span>
             </div>
             <p class="download-descricao">
-              Slides utilizados na defesa do projeto perante a banca avaliadora.
-              Contém infográficos, resultados e a identidade visual da cerveja.
+              Ata de Kick Off realizada com a equipe definindo os responsáveis pelas frentes de design, desenvolvimento, pesquisa e ferramentas de organização.
             </p>
           </div>
           <div class="download-acoes">
-            <a href="#" class="btn-download btn-download-primary">
-              ↓ Baixar PPTX
-            </a>
-            <a href="#" class="btn-download btn-download-secondary">
+            <button onclick="baixarArquivo('docs/Ata_de_Reuniao.pdf', 'Ata_Reuniao_BeerX.pdf')" class="btn-download btn-download-primary">
               ↓ Baixar PDF
+            </button>
+            <a href="docs/Ata de Reunião.pdf" target="_blank" class="btn-download btn-download-secondary">
+              ↗ Visualizar online
             </a>
           </div>
         </div>
-
       </div>
-      <!-- [FIM] CARD DE DOWNLOAD -->
 
-      <!-- [INÍCIO] CARD DE DOWNLOAD — Copie daqui até [FIM] para adicionar um novo item -->
+
+      <div class="downloads-categoria-titulo">Hardware e Automação</div>
+
       <div class="download-card">
-
         <div class="download-thumb">
-          <img src="img/Fotos Documentos/Redes de suprimentos.png" alt="Descrição">
+          <img src="img/Fotos Documentos/Sistema de monitoramento de brassagem.png" alt="Capa IoT">
+        </div>
+        <div class="download-body">
+          <div>
+            <div class="download-top">
+              <div>
+                <p class="download-categoria">Especificação Técnica</p>
+                <h3 class="download-titulo">Sistema de Monitoramento IoT</h3>
+              </div>
+              <span class="download-badge">PDF</span>
+            </div>
+            <p class="download-descricao">
+              Relatório detalhando a solução IoT para a brassagem e fermentação, arquitetura ESP32 com LoRaWAN, automação com n8n, InfluxDB e Grafana, incluindo planos de contingência.
+            </p>
+          </div>
+          <div class="download-acoes">
+            <button onclick="baixarArquivo('docs/Especificacao_Tecnica.pdf', 'Especificacao_Tecnica_Monitoramento.pdf')" class="btn-download btn-download-primary">
+              ↓ Baixar PDF
+            </button>
+            <a href="docs/Especificação Técnica_ Sistema de Monitoramento de Brassagem e Fermentação (3).pdf" target="_blank" class="btn-download btn-download-secondary">
+              ↗ Visualizar online
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="download-card">
+        <div class="download-thumb">
+          <img src="img/Fotos Documentos/Lista de material.png" alt="Capa BOM">
+        </div>
+        <div class="download-body">
+          <div>
+            <div class="download-top">
+              <div>
+                <p class="download-categoria">Lista de Materiais (BOM)</p>
+                <h3 class="download-titulo">Controlador de Temperatura</h3>
+              </div>
+              <span class="download-badge">PDF</span>
+            </div>
+            <p class="download-descricao">
+              Relação completa de hardwares necessários para montagem do controlador, contendo displays, sensores, Arduino, relés e links para aquisição.
+            </p>
+          </div>
+          <div class="download-acoes">
+            <button onclick="baixarArquivo('docs/Lista_de_materiais_controlador_temperatura.pdf', 'Lista_Materiais_Hardware.pdf')" class="btn-download btn-download-primary">
+              ↓ Baixar PDF
+            </button>
+            <a href="docs/Lista de materiais controlador temperatura.pdf" target="_blank" class="btn-download btn-download-secondary">
+              ↗ Visualizar online
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="download-card">
+        <div class="download-thumb">
+          <img src="img/Fotos Documentos/GitHub.svg" alt="Código Arduino">
+        </div>
+        <div class="download-body">
+          <div>
+            <div class="download-top">
+              <div>
+                <p class="download-categoria">Código-Fonte</p>
+                <h3 class="download-titulo">Firmware do Controlador (Arduino)</h3>
+              </div>
+              <span class="download-badge">GitHub</span>
+            </div>
+            <p class="download-descricao">
+              Repositório oficial contendo os códigos em C/C++ para o Arduino. Inclui a lógica de leitura dos sensores de temperatura e acionamento dos relés de controle.
+            </p>
+          </div>
+          <div class="download-acoes">
+            <a href="SEU_LINK_DO_GITHUB_AQUI" target="_blank" class="btn-download btn-download-primary">
+              ↗ Acessar Repositório
+            </a>
+            <a href="SEU_LINK_DO_GITHUB_AQUI/archive/refs/heads/main.zip" class="btn-download btn-download-secondary">
+              ↓ Baixar ZIP
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="download-card">
+        <div class="download-thumb">
+          <img src="img/Fotos Documentos/Dashboard.png" alt="Dashboard Data Studio">
+        </div>
+        <div class="download-body">
+          <div>
+            <div class="download-top">
+              <div>
+                <p class="download-categoria">Monitoramento</p>
+                <h3 class="download-titulo">Dashboard de Dados (Data Studio)</h3>
+              </div>
+              <span class="download-badge">Web / Online</span>
+            </div>
+            <p class="download-descricao">
+              Painel interativo gerado no Google Data Studio para visualização gráfica das métricas capturadas pelos sensores (temperatura e status das fases de produção).
+            </p>
+          </div>
+          <div class="download-acoes">
+            <a href="https://datastudio.google.com/reporting/fac25495-f395-434f-abe6-c6c75125300b" target="_blank" class="btn-download btn-download-primary">
+              ↗ Acessar Dashboard
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="downloads-categoria-titulo">Apresentações e Gamificação</div>
+
+      <div class="download-card">
+        <div class="download-thumb">
+          <img src="img/Fotos Documentos/Redes de suprimentos.png" alt="Capa Redes de Suprimentos">
         </div>
         <div class="download-body">
           <div>
@@ -339,108 +397,113 @@
                 <p class="download-categoria">Apresentação</p>
                 <h3 class="download-titulo">Redes de Suprimentos</h3>
               </div>
-              <span class="download-badge">PDF · 21 MB</span>
+              <span class="download-badge">PDF</span>
             </div>
             <p class="download-descricao">
-              Este projeto apresenta a estrutura da rede de suprimentos da Beer X, mapeando fornecedores, clientes, processos logísticos e fluxos de distribuição. O objetivo é analisar como a integração entre produção, transporte e tecnologia contribui para a eficiência da cadeia de suprimentos.
+              Este projeto apresenta a estrutura da rede de suprimentos da Beer X, mapeando fornecedores (1ª e 2ª camada), clientes, processos logísticos e fluxos de distribuição.
             </p>
           </div>
           <div class="download-acoes">
-            <a href="docs/Redes-de-Suprimentos-BeerX.pdf" class="btn-download btn-download-primary">
+            <button onclick="baixarArquivo('docs/Redes-de-Suprimentos-BeerX.pdf', 'Redes_de_Suprimentos_BeerX.pdf')" class="btn-download btn-download-primary">
               ↓ Baixar PDF
-            </a>
-            <a href="https://canva.link/7v3f4266tjvdi2x" class="btn-download btn-download-secondary">
+            </button>
+            <a href="https://canva.link/7v3f4266tjvdi2x" target="_blank" class="btn-download btn-download-secondary">
               ↗ Visualizar online
             </a>
           </div>
         </div>
-
       </div>
-      <!-- [FIM] CARD DE DOWNLOAD -->
 
-      
-
-      <!-- ══ CATEGORIA: RECEITA ══ -->
-      <div class="downloads-categoria-titulo">Receita</div>
-
-      <!-- [INÍCIO] CARD DE DOWNLOAD -->
       <div class="download-card">
-
         <div class="download-thumb">
-          <div class="download-thumb-placeholder">
-            <span>🌾</span>
-            <p>XLSX</p>
+          <img src="img/Fotos Documentos/Slides BeerXgame.png" alt="Apresentação Jogo">
+        </div>
+        <div class="download-body">
+          <div>
+            <div class="download-top">
+              <div>
+                <p class="download-categoria">Semana das Engenharias</p>
+                <h3 class="download-titulo">BeerX Game - Slides</h3>
+              </div>
+              <span class="download-badge">PPTX / PDF</span>
+            </div>
+            <p class="download-descricao">
+              Apresentação demonstrando a gamificação do mapeamento de fluxo de valor no processo de fabricação, incluindo regras de pontuação para o jogo educativo Lean.
+            </p>
+          </div>
+          <div class="download-acoes">
+            <button onclick="baixarArquivo('docs/BeerXGame.pdf', 'BeerXGame_Apresentacao.pdf')" class="btn-download btn-download-primary">
+              ↓ Baixar Arquivo
+            </button>
+            <a href="docs/BeerXGame.pdf" target="_blank" class="btn-download btn-download-secondary">
+              ↗ Visualizar online
+            </a>
           </div>
         </div>
+      </div>
 
+      <div class="download-card">
+        <div class="download-thumb">
+          <img src="img/Fotos Documentos/Logo BeerXgame.png" alt="Interface do Jogo BeerX">
+        </div>
+        <div class="download-body">
+          <div>
+            <div class="download-top">
+              <div>
+                <p class="download-categoria">Software / Web</p>
+                <h3 class="download-titulo">Jogo Educativo Lean (BeerX)</h3>
+              </div>
+              <span class="download-badge">Web & Repositório</span>
+            </div>
+            <p class="download-descricao">
+              Aplicação interativa desenvolvida pela equipe para aplicar os conceitos da filosofia Lean na fabricação de cerveja artesanal através de mecânicas de gamificação.
+            </p>
+          </div>
+          <div class="download-acoes">
+            <a href="https://legalso.github.io/beerx_game/" target="_blank" class="btn-download btn-download-primary">
+              ↗ Jogar Agora
+            </a>
+            <a href="https://github.com/Legalso/beerx_game" target="_blank" class="btn-download btn-download-secondary">
+              ↗ Ver Repositório
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="downloads-categoria-titulo">Receita e Produção</div>
+
+      <div class="download-card">
+        <div class="download-thumb">
+          <img src="img/Fotos Documentos/Receita Session Pilsen.png" alt="Capa Receita">
+        </div>
         <div class="download-body">
           <div>
             <div class="download-top">
               <div>
                 <p class="download-categoria">Ficha Técnica</p>
-                <h3 class="download-titulo">Receita e Ficha de Produção</h3>
+                <h3 class="download-titulo">Receita Session Pilsen - SQN</h3>
               </div>
-              <span class="download-badge">PDF · 105 KB</span>
+              <span class="download-badge">PDF</span>
             </div>
             <p class="download-descricao">
-              PDF com a receita detalhada: ingredientes, quantidades, temperaturas de mostura,
-              tempo de fervura e cronograma de adição de lúpulo.
+              Ficha detalhada com insumos, controle de rampas de temperatura (Mostura e Mash Out), tempos de fervura do lúpulo, dados do priming e maturação para 5 litros.
             </p>
           </div>
           <div class="download-acoes">
-            <a href="docs/receita-cerveja.pdf" class="btn-download btn-download-primary">
+            <button onclick="baixarArquivo('docs/receita-cerveja.pdf', 'Receita_SessionPilsen_SQN.pdf')" class="btn-download btn-download-primary">
               ↓ Baixar PDF
+            </button>
+            <a href="docs/receita-cerveja.pdf" target="_blank" class="btn-download btn-download-secondary">
+              ↗ Visualizar online
             </a>
           </div>
         </div>
-
       </div>
-      <!-- [FIM] CARD DE DOWNLOAD -->
-
-      <!-- ══ CATEGORIA: IDENTIDADE VISUAL ══ -->
-      <div class="downloads-categoria-titulo">Identidade Visual</div>
-
-      <!-- [INÍCIO] CARD DE DOWNLOAD -->
-      <div class="download-card">
-
-        <div class="download-thumb">
-          <div class="download-thumb-placeholder">
-            <span>🎨</span>
-            <p>ZIP</p>
-          </div>
-        </div>
-
-        <div class="download-body">
-          <div>
-            <div class="download-top">
-              <div>
-                <p class="download-categoria">Design</p>
-                <h3 class="download-titulo">Pacote de Identidade Visual</h3>
-              </div>
-              <span class="download-badge">ZIP · 14 MB</span>
-            </div>
-            <p class="download-descricao">
-              Logos, paleta de cores, tipografia e mockups do rótulo em alta resolução.
-              Arquivos disponíveis em PNG, SVG e PDF.
-            </p>
-          </div>
-          <div class="download-acoes">
-            <a href="#" class="btn-download btn-download-primary">
-              ↓ Baixar ZIP
-            </a>
-            <a href="#" class="btn-download btn-download-secondary">
-              ↗ Ver no Figma
-            </a>
-          </div>
-        </div>
-
-      </div>
-      <!-- [FIM] CARD DE DOWNLOAD -->
 
     </div>
   </main>
 
-  <!-- RODAPÉ -->
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
@@ -450,7 +513,7 @@
             <h1 style="font-size:1.5rem;margin:0">Beer<span>X</span></h1>
           </div>
           <p>
-            Um projeto acadêmico do curso de [Curso] da [Nome da Universidade].
+            Um projeto acadêmico do curso de Engenharia da Computação do Senac.
             Feito com rigor científico, paixão e muita cerveja pelo caminho.
           </p>
         </div>
@@ -458,31 +521,30 @@
         <div class="footer-col">
           <h4>Navegação</h4>
           <ul>
-            <li><a href="index.html#hero">Início</a></li>
-            <li><a href="index.html#sobre">Sobre o Projeto</a></li>
-            <li><a href="index.html#integrantes">Equipe</a></li>
-            <li><a href="index.html#galeria">Galeria</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#integrantes">Equipe</a></li>
+          <li><a href="index.html#galeria">Galeria</a></li>
+          <li><a href="documentos.html">Documentos</a></li>
+          <li><a href="historia.html">História</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Contato</h4>
           <ul>
-            <li><a href="mailto:beerx@email.com">beerx@email.com</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">[Universidade]</a></li>
+            <li><a href="https://www.sp.senac.br/">Senac</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>© 2025 BeerX — Projeto Acadêmico. Feito com <span>❤</span> e lúpulo.</p>
+        <p>© 2026 BeerX — Projeto Acadêmico. Feito com <span>❤</span> e lúpulo.</p>
         <span class="footer-tag">🎓 Projeto Universitário</span>
       </div>
     </div>
   </footer>
 
+  <script src="js/downloads.js"></script>
 </body>
 </html>
