@@ -331,11 +331,12 @@ nav a:hover { color: var(--verde); }
 }
 
 .carrossel-slide {
-  min-width: calc(33.333% - 14px);
+  flex: 0 0 calc((100% - 40px) / 3);
+  width: calc((100% - 40px) / 3); 
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .slide-placeholder {

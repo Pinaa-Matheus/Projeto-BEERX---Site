@@ -52,12 +52,6 @@
 
     /* ══════════════════════════════════════════
        FASE DA HISTÓRIA
-       Para adicionar uma nova fase, copie o bloco
-       entre os comentários:
-       e
-       e cole após a última fase.
-       Alterne .fase-esquerda e .fase-direita
-       para o efeito zigue-zague.
     ══════════════════════════════════════════ */
 
     .fase {
@@ -74,7 +68,6 @@
 
     /* Slot vazio para o lado oposto */
     .fase-vazio {
-      /* ocupa o espaço mas fica invisível */
     }
 
     /* Coluna central com o marcador */
@@ -189,7 +182,6 @@
     }
 
     /* ── CITAÇÃO / QUOTE ── */
-    /* Bloco opcional para colocar uma frase marcante entre as fases */
     .historia-quote {
       text-align: center;
       padding: 64px 48px;
@@ -265,13 +257,12 @@
 
       <div class="historia-timeline">
 
+        <!-- Fase 1 -->
         <div class="fase fase-esquerda">
           <div class="fase-card">
-            
             <div class="fase-foto">
               <img src="img/Fotos Grupo/Primeira Aula.jfif" alt="O início do projeto">
             </div>
-            
             <div class="fase-corpo">
               <p class="fase-label">O Começo</p>
               <h3 class="fase-titulo">Tudo começou em sala de aula</h3>
@@ -280,22 +271,19 @@
               </p>
               <span class="fase-destaque">✦ O ponto de partida</span>
             </div>
-            
           </div>
-
           <div class="fase-marcador">
             <div class="fase-bolinha"></div>
           </div>
-
           <div class="fase-vazio"></div>
         </div>
+
+        <!-- Fase 2 -->
         <div class="fase fase-direita">
           <div class="fase-vazio"></div>
-
           <div class="fase-marcador">
             <div class="fase-bolinha"></div>
           </div>
-
           <div class="fase-card">
             <div class="fase-foto">
               <img src="img/Fotos Grupo/Pesquisa.jfif" alt="Formação da Equipe">
@@ -304,7 +292,7 @@
               <p class="fase-label">Formação da Equipe</p>
               <h3 class="fase-titulo">Oito pessoas, uma ideia</h3>
               <p class="fase-texto">
-                Nos reunimos pela primeira vez fora da sala de aula numa tarde de [mês].
+                Nos reunimos pela primeira vez fora da sala de aula numa tarde de fevereiro de 2026.
                 Cada um trouxe algo diferente: quem entendia de química, quem gostava de design,
                 quem já tinha feito cerveja em casa. Dividimos as responsabilidades e traçamos o plano.
               </p>
@@ -312,11 +300,14 @@
             </div>
           </div>
         </div>
+
+        <!-- Quote -->
         <div class="historia-quote">
           <p>Da sala de aula ao copo: unindo tecnologia, café da manhã compartilhado e a arte de fazer cerveja.</p>
           <cite>BEERX</cite>
         </div>
 
+        <!-- Fase 3 -->
         <div class="fase fase-esquerda">
           <div class="fase-card">
             <div class="fase-foto">
@@ -334,20 +325,18 @@
               <span class="fase-destaque">✦ [2 Meses]</span>
             </div>
           </div>
-
           <div class="fase-marcador">
             <div class="fase-bolinha"></div>
           </div>
-
           <div class="fase-vazio"></div>
         </div>
+
+        <!-- Fase 4 (Com o texto corrigido/fechado) -->
         <div class="fase fase-direita">
           <div class="fase-vazio"></div>
-
           <div class="fase-marcador">
             <div class="fase-bolinha"></div>
           </div>
-
           <div class="fase-card">
             <div class="fase-foto">
               <img src="img/Fotos Grupo/Foto producao.jfif" alt="Primeiro dia de brassagem">
@@ -356,4 +345,70 @@
               <p class="fase-label">Mãos na Massa</p>
               <h3 class="fase-titulo">O primeiro dia de brassagem</h3>
               <p class="fase-texto">
-              O laboratório virou cervejaria por um dia. Acordamos cedo, separamos os equipamentos e dividimos as tarefas para dar vida ao projeto. Enquanto uma parte da equipe cuidava da moagem e do controle da água, outra calibrava os sensores de temperatura
+              O laboratório virou cervejaria por um dia. Acordamos cedo, separamos os equipamentos e dividimos as tarefas para dar vida ao projeto. Enquanto uma parte da equipe cuidava da moagem e do controle da água, outra calibrava os sensores de temperatura.
+              </p>
+              <span class="fase-destaque">✦ Início da Produção</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fase 5: O NOVO BLOCO DE ENVASE -->
+        <div class="fase fase-esquerda">
+          <div class="fase-card">
+            <div class="fase-foto">
+              <img src="img/Fotos Grupo/Foto.jfif" alt="Momento do Envase">
+            </div>
+            <div class="fase-corpo">
+              <p class="fase-label">A Reta Final</p>
+              <h3 class="fase-titulo">O aguardado momento do envase</h3>
+              <p class="fase-texto">
+                Após as semanas de paciência durante a fermentação e maturação, finalmente chegou a hora de engarrafar. Sanitizamos rigorosamente os equipamentos, calculamos o priming para a carbonatação natural e enchemos as garrafas uma a uma, selando nosso trabalho com as tampinhas.
+              </p>
+              <span class="fase-destaque">✦ O Engarrafamento</span>
+            </div>
+          </div>
+          <div class="fase-marcador">
+            <div class="fase-bolinha"></div>
+          </div>
+          <div class="fase-vazio"></div>
+        </div>
+
+      </div> 
+    </div> 
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-square" style="width:32px;height:32px"></div>
+            <h1 style="font-size:1.5rem;margin:0">Beer<span>X</span></h1>
+          </div>
+          <p>
+            Um projeto acadêmico do curso de Engenharia da Computação do Senac.
+            Feito com rigor científico, paixão e muita cerveja pelo caminho.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#integrantes">Equipe</a></li>
+            <li><a href="index.html#galeria">Galeria</a></li>
+            <li><a href="documentos.html">Documentos</a></li>
+            <li><a href="historia.html">História</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 BeerX — Projeto Acadêmico. Feito com <span>❤</span> e lúpulo.</p>
+        <span class="footer-tag">🎓 Projeto Universitário</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
